@@ -148,7 +148,7 @@ function spawnClouds() {
     cloud.scale = 0.5;
     cloud.velocityX = -3;
     
-    cloud.lifetime = 300;
+    cloud.lifetime = 350;
     
     //adjust the depth
     cloud.depth = trex.depth;
@@ -160,7 +160,7 @@ function spawnClouds() {
 }
 
 function spawnObstacles() {
-  if(frameCount % 80 === 0) {
+  if(frameCount % 90 === 0) {
     var obstacle = createSprite(600,height-95,20,30);
     obstacle.setCollider('circle',0,0,40)
   
