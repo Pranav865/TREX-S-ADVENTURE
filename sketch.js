@@ -160,13 +160,12 @@ function spawnClouds() {
 }
 
 function spawnObstacles() {
-  if(frameCount % 60 === 0) {
+  if(frameCount % 80 === 0) {
     var obstacle = createSprite(600,height-95,20,30);
     obstacle.setCollider('circle',0,0,40)
   
     obstacle.velocityX = -(6 + 3*score/100);
     
-    //generate random obstacles
     var rand = Math.round(random(1,2));
     switch(rand) {
       case 1: obstacle.addImage(obstacle1);
